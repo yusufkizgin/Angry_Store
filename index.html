@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angry Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+    <!--JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+
+
+</head>
+<body>
+  <div class="loading-screen">
+        <!-- Yükleme animasyonu, buraya istediğiniz bir animasyon veya metin eklenebilir -->
+        <p>Loading...</p>
+  </div>
+  <div id="main-content" style="display:none;">
+    <div id="bilgiButonu">!!</div>
+    <div id="bilgiKutusu">İndirimleri Kaçırmamak İçin Takipte Kalın!</div>
+    <div id="bildirim" class="bildirim"></div>
+    <!--Kayan Yazı-->
+    <div id="kayan-yazi" class="container-fluid">
+		<p class="text-center">650TL ÜZERİ SİPARİŞLERİNİZDE KARGO BEDAVA!!!</p>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/amblem.png" style="width: 40px;" class="mt-1 rounded-circle me-2" alt="Logo"></a>
+        <div id="saatTarih" class="navbar-text"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <span id="dolar-kur">|  Dolar Kuru: 32,275 TL/$</span>
+          </li>
+        </ul>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#urunler">Ürünler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">İletişim</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="sepet.html">Sepet</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <!-- Header -->
+    <div id="myCarousel" class="carousel slide mx-auto" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="images/slider1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item"> 
+          <img src="images/slider2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider3.jpg" alt="Third slide">
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Önceki</span>
+    </a>
+    <a class="carousel-control-next h-75 mt-5" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Sonraki</span>
+    </a>
+    
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    
+    <!--Kategoriler-->
+    <div class="container-fluid bg-white my-5">
+      <div class="row">
+        <div class="col-6 img-zoom text-center">
+          <a href=""><img src="images/kadin.jpeg" class="w-75 mx-auto categories" alt=""></a>
+        </div>
+        <div class="col-6 img-zoom text-center">
+          <a href=""><img src="images/erkek.jpeg" class="w-75 mx-auto categories" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Wp Butonu-->
+    <div class="d-flex justify-content-end fixed-bottom mb-5 mr-5 ">
+      <a href="https://wa.me/905550282489" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp fa-3x wp"></i>
+      </a>
+    </div>
+    <a name="urunler"></a>
+    <h1 class="text-center mt-4 new">YENİ ÜRÜNLERİ KEŞFEDİN</h1>
+
+    <!--Ürünler Listesi-->
+    <div class="container mt-5 small">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card bg-transparent border-white text-dark text-center">
+            <img class="card-img-top img-zoom" src="images/kadin_kumas.jpeg" alt="Ürün Resmi" >
+            <div class="card-body">
+              <h5 class="card-title">Siyah Kadın Kumaş Pantolon</h5>
+              <span class="card-text"><strong>Fiyat:</strong> 699.90 TL</span>
+              <div class="btn-group crud">
+                <button class="btn btn-secondary btn-md mt-2 sepet sepet-cikar"> - </button>
+                <button class="btn btn-dark btn-md mt-2 sepet sepet-ekle"> + </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card bg-transparent border-white text-dark text-center">
+            <img class="card-img-top img-zoom" src="images/kadin_ceket.jpeg" alt="Ürün Resmi" >
+            <div class="card-body">
+              <h5 class="card-title">Krem Kadın Kumaş Pantolon</h5>
+              <span class="card-text"><strong>Fiyat:</strong> 649.90 TL</span>
+              <div class="btn-group crud">
+                <button class="btn btn-secondary btn-md mt-2 sepet sepet-cikar"> - </button>
+                <button class="btn btn-dark btn-md mt-2 sepet sepet-ekle"> + </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card bg-transparent border-white text-dark text-center">
+            <img class="card-img-top img-zoom" src="images/kumas_erkek.jpeg" alt="Ürün Resmi" >
+            <div class="card-body">
+              <h5 class="card-title">Krem Erkek Kumaş Pantolon</h5>
+              <span class="card-text"><strong>Fiyat:</strong> 800.00 TL</span>
+              <div class="btn-group crud">
+                <button class="btn btn-secondary btn-md mt-2 sepet sepet-cikar"> - </button>
+                <button class="btn btn-dark btn-md mt-2 sepet sepet-ekle"> + </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card bg-transparent border-white text-dark text-center">
+            <img class="card-img-top img-zoom" src="images/kumas_pantolon.jpeg" alt="Ürün Resmi" >
+            <div class="card-body">
+              <h5 class="card-title">Mavi Erkek Gömlek</h5>
+              <span class="card-text"><strong>Fiyat:</strong> 1199.90 TL</span>
+              <div class="btn-group crud">
+                <button class="btn btn-secondary btn-md mt-2 sepet sepet-cikar"> - </button>
+                <button class="btn btn-dark btn-md mt-2 sepet sepet-ekle"> + </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card bg-transparent border-white text-dark text-center">
+            <img class="card-img-top img-zoom" src="images/erkek_tisort.jpeg" alt="Ürün Resmi" >
+            <div class="card-body">
+              <h5 class="card-title">Yeşil Erkek T-Shirt</h5>
+              <span class="card-text"><strong>Fiyat:</strong> 499.90 TL</span>
+              <div class="btn-group crud">
+                <button class="btn btn-secondary btn-md mt-2 sepet sepet-cikar"> - </button>
+                <button class="btn btn-dark btn-md mt-2 sepet sepet-ekle"> + </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card bg-transparent border-white text-dark text-center">
+            <img class="card-img-top img-zoom" src="images/takim_erkek.jpeg" alt="Ürün Resmi" >
+            <div class="card-body">
+              <h5 class="card-title">Krem Erkek Takım Elbise</h5>
+              <span class="card-text"><strong>Fiyat:</strong> 4789.90 TL</span>
+              <div class="btn-group crud">
+                <button class="btn btn-secondary btn-md mt-2 sepet sepet-cikar"> - </button>
+                <button class="btn btn-dark btn-md mt-2 sepet sepet-ekle"> + </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card bg-transparent border-white text-dark text-center">
+            <img class="card-img-top img-zoom" src="images/Xavier.jpeg" alt="Ürün Resmi" >
+            <div class="card-body">
+              <h5 class="card-title">Mavi Keten Gömlek</h5>
+              <span class="card-text"><strong>Fiyat:</strong> 699.90 TL</span>
+              <div class="btn-group crud">
+                <button class="btn btn-secondary btn-md mt-2 sepet sepet-cikar"> - </button>
+                <button class="btn btn-dark btn-md mt-2 sepet sepet-ekle"> + </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card bg-transparent border-white text-dark text-center">
+            <img class="card-img-top img-zoom" src="images/white_blouse.jpeg" alt="Ürün Resmi" >
+            <div class="card-body">
+              <h5 class="card-title">Beyaz Kadın Kazak</h5>
+              <span class="card-text"><strong>Fiyat:</strong> 529.90 TL</span>
+              <div class="btn-group crud">
+                <button class="btn btn-secondary btn-md mt-2 sepet sepet-cikar"> - </button>
+                <button class="btn btn-dark btn-md mt-2 sepet sepet-ekle"> + </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card bg-transparent border-white text-dark text-center">
+            <img class="card-img-top img-zoom" src="images/Moda.jpeg" alt="Ürün Resmi" >
+            <div class="card-body">
+              <h5 class="card-title">Siyah Kadın Kazak</h5>
+              <span class="card-text"><strong>Fiyat:</strong> 450.00 TL</span>
+              <div class="btn-group crud">
+                <button class="btn btn-secondary btn-md mt-2 sepet sepet-cikar"> - </button>
+                <button class="btn btn-dark btn-md mt-2 sepet sepet-ekle"> + </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="divHD">
+      <h1 style="font-size: 40px" class="havaDurumu">Hava Durumu</h1>
+      <div id="havaDurumu" class="havaDurumu"></div>
+    </div>
+    <p id="sevgi"></p>
+    <p id="hideP" style="margin-left: 30px;">Bizi Seçtiğiniz İçin Teşekkür Ederiz! Yazıyı Gizlemek İçin Üzerine Tıklayınız.</p>
+     <!--Hakkımızda-->
+     <a name="hakkimizda"></a>
+    <footer class="footer">
+      <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d83264.07835355001!2d34.1458737772706!3d39.14470676180078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1714120100573!5m2!1str!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="contact-info">
+        <h3>İletişim</h3>
+        <table class="table text-light">
+          <tbody>
+            <tr>
+              <td><span>Adres : </span></td>
+              <td><span>Esenkent, Sakarya Cd. 34776 Dudullu Osb/Ümraniye/İstanbul</span></td>
+            </tr>
+            <tr>
+              <td><span>Telefon :</span></td>
+              <td><span>05*****5086</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </footer>
+</div>
+  <script src="js/homepage.js"></script>
+  <script src="js/home_jquery.js"></script>
+</body>
+</html>
+    
+    
+    
+    

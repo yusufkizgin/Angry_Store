@@ -1,0 +1,174 @@
+
+*{
+  box-sizing: border-box;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Yükleme ekranı arkaplan rengi */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Diğer içeriklerin üzerinde olmasını sağlar */
+  transition: opacity 1s ease;
+}
+
+#bilgiButonu {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #841d1d; /* Buton rengi */
+  opacity: 0.8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Bilgi kutusu stili */
+#bilgiKutusu {
+  display: none; /* Başlangıçta gizli */
+  position: fixed;
+  bottom: 70px; /* Butonun biraz üstünde */
+  left: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#myCarousel {
+    height: 100vh;
+  }
+  .carousel-inner img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .carousel-inner {
+  overflow: hidden;
+}
+    #kayan-yazi p {
+    color: white;
+    animation: kayan-yazi 8s linear infinite;
+  }
+  #kayan-yazi{
+    background-color: black;
+  }
+  
+  @keyframes kayan-yazi {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  p.text-center {
+    margin-bottom: auto;
+  }
+
+  a{
+    transition: 10s;
+  }
+
+  .havaDurumu{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #dolar-kur{
+    text-align: center;
+    margin-left: 7px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .wp{
+    color: green;
+  }
+  .new{
+    letter-spacing: 2px;
+  }
+  .img-zoom {
+    transition: transform 0.8s;
+  }
+  
+  .img-zoom:hover {
+    transform: scale(1.1);
+  }
+  .alt{
+    color: white;
+    width: 20px;
+  }
+  .categories{
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .card.img-zoom{
+    width: min-content;
+    height: min-content;
+  }
+
+  .card-img-top {
+    max-width: 90%; /* Resmin maksimum genişliği */
+    max-height: 400px; /* Resmin maksimum yüksekliği */
+  }
+
+  #divHD{
+    margin: 30px;
+    border: black solid 3px;
+    border-radius: 10px;
+  }
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.map-container {
+  width: 50%; /* Haritanın genişliği */
+}
+.contact-info {
+  width: 45%; /* İletişim bilgilerinin genişliği */
+  text-align: center; /* İletişim bilgilerini sağa hizala */
+}
+.map-container iframe {
+  width: 100%; /* Haritanın tam genişlikte olması */
+  height: 200px; /* Haritanın yüksekliği */
+}
+
+.sepet-cikar{
+  margin-left: 10px;
+}
+
+.card-text{
+  letter-spacing: 1px;
+  font-size: medium;
+}
+
+.bildirim {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  display: none; /* Bildirimi varsayılan olarak gizle */
+  z-index: 1;
+}
