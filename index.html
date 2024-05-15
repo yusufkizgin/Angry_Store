@@ -45,71 +45,75 @@
     <div id="bilgiButonu">!!</div>
     <div id="bilgiKutusu">İndirimleri Kaçırmamak İçin Takipte Kalın!</div>
     <div id="bildirim" class="bildirim"></div>
-    <!--Kayan Yazı-->
-    <div id="kayan-yazi" class="container-fluid">
-		<p class="text-center">650TL ÜZERİ SİPARİŞLERİNİZDE KARGO BEDAVA!!!</p>
-    </div>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/amblem.png" style="width: 40px;" class="mt-1 rounded-circle me-2" alt="Logo"></a>
-        <div id="saatTarih" class="navbar-text"></div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="navbar-nav justify-content-end">
+    <div class="nav-container fixed-top">
+ <!--Kayan Yazı-->
+ <div id="kayan-yazi" class="container-fluid">
+  <p class="text-center">650TL ÜZERİ SİPARİŞLERİNİZDE KARGO BEDAVA!!!</p>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/amblem.png" style="width: 40px;" class="mt-1 rounded-circle me-2" alt="Logo"></a>
+      <div id="saatTarih" class="navbar-text"></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <span id="dolar-kur">|  Dolar Kuru: 32,275 TL/$</span>
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Anasayfa</a>
+          </li>
           <li class="nav-item">
-            <span id="dolar-kur">|  Dolar Kuru: 32,275 TL/$</span>
+            <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#urunler">Ürünler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">İletişim</a>
           </li>
         </ul>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Anasayfa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#urunler">Ürünler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">İletişim</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="sepet.html">Sepet</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="sepet.html">Sepet</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+    </div>
+   
     
 
     <!-- Header -->
     <div id="myCarousel" class="carousel slide mx-auto" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active ">
-          <img src="images/slider1.jpg" alt="First slide">
+          <img class="slider-image" src="images/slider1.jpg" alt="First slide">
         </div>
         <div class="carousel-item"> 
-          <img src="images/slider2.jpg" alt="Second slide">
+          <img class="slider-image" src="images/slider2.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img src="images/slider3.jpg" alt="Third slide">
+          <img class="slider-image" src="images/slider3.jpg" alt="Third slide">
         </div>
       </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Önceki</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Sonraki</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Önceki</span>
-    </a>
-    <a class="carousel-control-next h-75 mt-5" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Sonraki</span>
-    </a>
+   
     
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
