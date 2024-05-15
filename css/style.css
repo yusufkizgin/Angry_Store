@@ -17,6 +17,10 @@
   transition: opacity 1s ease;
 }
 
+.nav-container{
+  opacity: 0.9;
+}
+
 #bilgiButonu {
   position: fixed;
   bottom: 40px;
@@ -45,6 +49,10 @@
   z-index: 1;
 }
 
+.slider-image{
+  height: 90vh;
+  padding-top: 110px;
+}
 #myCarousel {
     height: 100vh;
   }
@@ -58,7 +66,7 @@
 }
     #kayan-yazi p {
     color: white;
-    animation: kayan-yazi 8s linear infinite;
+    animation: kayan-yazi 15s linear infinite;
   }
   #kayan-yazi{
     background-color: black;
@@ -66,10 +74,10 @@
   
   @keyframes kayan-yazi {
     0% {
-      transform: translateX(100%);
+      transform: translateX(70%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-70%);
     }
   }
   
@@ -128,8 +136,10 @@
 
   #divHD{
     margin: 30px;
-    border: black solid 3px;
+    border: black solid 0.5px;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px #888888;
+    
   }
 
 .footer {
