@@ -130,7 +130,7 @@
   }
 
   .card-img-top {
-    max-width: 90%; /* Resmin maksimum genişliği */
+    /*max-width: 90%; /* Resmin maksimum genişliği */
     max-height: 400px; /* Resmin maksimum yüksekliği */
   }
 
